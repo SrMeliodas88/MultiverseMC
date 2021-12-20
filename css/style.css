@@ -3,12 +3,12 @@
     box-sizing: border-box;
   }
   
-  .body {
+#body {
     font-family: sans-serif;
     padding: 90px 20px 0;
   }
   
-  .header {
+#header {
     background-color: slategrey;
     height: 80px;
     position: fixed;
@@ -17,50 +17,49 @@
     left: 0;
   }
   
-  .nav {
+#nav {
     display: flex;
     justify-content: space-between;
   }
   
-  .nav-link {
+#nav-link {
     color: white;
     text-decoration: none;
   }
   
-  .logo {
+#logo {
     font-size: 30px;
     font-weight: bold;
     padding: 0 40px;
     line-height: 80px;
   }
   
-.footer {
-        position: fixed;
-        left: 0;
-        bottom: 0;
-        width: 100%;
-        text-align: center;
-        align-self: flex-end;
-        background-color: #333333;
-    }
+#wrapper {
+  /*height:100%;*/   /*you need to comment this height*/
+  margin: 0 auto;
+  min-height: 100%;
+  min-height: 700px;  /* only for Demo purposes */
+  padding-bottom: -30px;
+  width: 985px;
+  position: relative;  /*and you need to add this */
+}
+#footer {
+  background: #000;
+  border-top: 1px solid #00F0FF;
+  height: 30px;
+  margin-top: -30px;
+  padding: 5px 0;
+  width: 100%;
+  position: relative;  /*use relative position*/
+}
 
-p.copyright {
-        position: absolute;
-        width: 100%;
-        color: #fff;
-        line-height: 40px;
-        font-size: 0.7em;
-        text-align: center;
-        bottom:0;
-    }
-
-  .nav-menu {
+#nav-menu {
     display: flex;
     margin-right: 40px;
     list-style: none;
   }
   
-  .nav-menu-item {
+#nav-menu-item {
     font-size: 18px;
     margin: 0 10px;
     line-height: 80px;
@@ -68,19 +67,19 @@ p.copyright {
     width: max-content;
   }
   
-  .nav-menu-link {
+#nav-menu-link {
     padding: 8px 12px;
     border-radius: 3px;
   }
   
-  .nav-menu-link:hover,
-  .nav-menu-link_active {
+#nav-menu-link:hover,
+#nav-menu-link_active {
     background-color: black;
     transition: 0.5s;
   }
   
   /* TOGGLE */
-  .nav-toggle {
+#nav-toggle {
     color: white;
     background: none;
     border: none;
@@ -98,17 +97,17 @@ p.copyright {
       padding-top: 70px;
     }
   
-    .header {
+#header {
       height: 60px;
     }
   
-    .logo {
+#logo {
       font-size: 25px;
       padding: 0 20px;
       line-height: 60px;
     }
   
-    .nav-menu {
+#nav-menu {
       flex-direction: column;
       align-items: center;
       margin: 0;
@@ -125,25 +124,25 @@ p.copyright {
       transition: left 0.3s;
     }
   
-    .nav-menu-item {
+#nav-menu-item {
       line-height: 70px;
     }
   
-    .nav-menu-link:hover,
-    .nav-menu-link_active {
+#nav-menu-link:hover,
+#nav-menu-link_active {
       background: none;
       color: #000000;
     }
   
-    .nav-toggle {
+#nav-toggle {
       display: block;
     }
   
-    .nav-menu_visible {
+#nav-menu_visible {
       left: 0;
     }
   
-    .nav-toggle:focus:not(:focus-visible) {
+#nav-toggle:focus:not(:focus-visible) {
       outline: none;
     }
 .footer {

@@ -51,6 +51,7 @@ button:hover{
 .body {
     font-family: arial;
     padding: 90px 20px 0;
+    background: #f1f1f1;
   }
   
 .header {
@@ -78,6 +79,7 @@ button:hover{
     font-size: 30px;
     font-weight: bold;
     padding: 0 40px;
+    height: 80px;
     line-height: 80px;
   }
 
@@ -135,7 +137,7 @@ footer a {
     margin-left: 20px;
     font-size: 20px;
     position: relative;
-    bottom: 60px;
+    bottom: 100px;
     text-decoration: none;
 }
   
@@ -154,10 +156,7 @@ footer a {
   width: 100%;
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
-  
-
- 
- }
+  }
 
 .title{
  
@@ -247,7 +246,7 @@ footer a {
     margin-left: 20px;
     font-size: 15px;
     position: relative;
-    bottom: 70px;
+    bottom: 100px;
     text-decoration: none;
     }
 }
